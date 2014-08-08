@@ -19,10 +19,9 @@ if(isset($_COOKIE['useBs3'])){
   }
 ?>
 <?php if($useBs3) { ?>
-<!-- <link href="//g.tbcdn.cn/fi/bui/css/bs3/dpl-min.css" rel="stylesheet"> 
-<link href="//g.tbcdn.cn/fi/bui/css/bs3/bui-min.css" rel="stylesheet"> -->
-<link rel="stylesheet" href="/git/bui/assets/css/bs3/dpl.css">
-<link rel="stylesheet" href="/git/bui/assets/css/bs3/bui.css">
+<link href="//g.tbcdn.cn/fi/bui/css/bs3/dpl-min.css" rel="stylesheet"> 
+<link href="//g.tbcdn.cn/fi/bui/css/bs3/bui-min.css" rel="stylesheet"> 
+
 <?php } else {?>
 <link href="//g.tbcdn.cn/fi/bui/css/dpl.css" rel="stylesheet">
 <link href="//g.tbcdn.cn/fi/bui/css/bui.css" rel="stylesheet">

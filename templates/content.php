@@ -49,7 +49,8 @@
   <script type="text/javascript">
 
   BUI.use(['bui/cookie','bui/menu','bui/tab'],function(Cookie,Menu,Tab){
-    var loadParam = '?loader=' + Cookie.get('loader'),
+    var loaderStr = Cookie.get('loader'), 
+      loadParam = '?loader=' + loaderStr,
       regxScript = /<script[^><]*>[^<]*<\/script>/ig,
       indexStr = '<!--t为时间戳-->';
 
@@ -132,6 +133,13 @@
         $('#J_JS').show();
         $('#J_Txtjs').hide();
       }
+    });
+
+    $('#J_SelLoader').val(loaderStr);
+    $('#J_SelLoader').on('change',function(){
+      var loader = $('#J_SelLoader').val();
+      Cookie.set('loader',loader);
+      location.reload();
     });
     function resetDemo () {
       var item = sideMenu.getSelected(),

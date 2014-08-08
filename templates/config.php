@@ -12,9 +12,11 @@
   elseif ($loader == 'bui') {
     $useBui = true;
   }
-  else {
+  elseif($loader =='seed'){
+    $useSeed = true;
+  }else {
     $useSeajs = true;
     $loader = 'seajs';
   }
-  setcookie('loader', $loader);
+  //setcookie('loader', $loader);
 ?>
