@@ -1,0 +1,1 @@
+<?php if(isset($api)){?>&nbsp;&nbsp;<span class="c-title">[</span><a target="_blank" class="title-lnk" href='<?php echo $api;?>'>API</a><span class="c-title">]</span><?php }?>
