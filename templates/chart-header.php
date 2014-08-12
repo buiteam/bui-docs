@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<?php include 'config.php'; ?>
 <title><?php echo $title; ?></title>
 <?php
   if(isset($_GET['useLoader'])||isset($_POST['useLoader'])){
