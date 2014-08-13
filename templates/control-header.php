@@ -8,11 +8,11 @@
 <link href="../../assets/code/demo.css" rel="stylesheet">
 
 <?php if($useBs3) { ?>
-  <link href="http://g.alicdn.com/fi/bui/css/bs3/dpl.css" rel="stylesheet">
-  <link href="http://g.alicdn.com/fi/bui/css/bs3/bui.css" rel="stylesheet">
+  <link href="<?php echo $assets; ?>/css/bs3/dpl.css" rel="stylesheet">
+  <link href="<?php echo $assets; ?>/css/bs3/bui.css" rel="stylesheet">
 <?php } else {?>
-  <link href="http://g.alicdn.com/fi/bui/css/dpl.css" rel="stylesheet">
-  <link href="http://g.alicdn.com/fi/bui/css/bui.css" rel="stylesheet">
+  <link href="<?php echo $assets; ?>/css/default/dpl.css" rel="stylesheet">
+  <link href="<?php echo $assets; ?>/css/default/bui.css" rel="stylesheet">
 <?php }?>
 
 </head>
