@@ -77,6 +77,21 @@
           text : '固定tooltip' ,
           href : 'line/tooltip-fixed.php',
           minHeight : 600
+        },
+        {
+          text : '自适应宽度' ,
+          href : 'line/auto-width.php',
+          minHeight : 600
+        },
+        {
+          text : '自适应宽度（保持高宽比）' ,
+          href : 'line/auto-ratio.php',
+          minHeight : 600
+        },
+        {
+          text : '坐标轴转换' ,
+          href : 'line/invert.php',
+          minHeight : 600
         }
 
     ];

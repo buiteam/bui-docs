@@ -28,6 +28,11 @@
           text : '层叠百分比' ,
           href : 'area/percent.php',
           minHeight : 600
+        },
+        {
+          text : '坐标轴翻转' ,
+          href : 'area/invert.php',
+          minHeight : 600
         }
 
     ];
