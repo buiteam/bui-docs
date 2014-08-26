@@ -54,6 +54,10 @@
           href : 'form/depends.php'
         },
         {
+          text : '分组依赖1',
+          href : 'form/group-enable.php'
+        },
+        {
           text : '复杂表单',
           href : 'form/adform.php',
           minHeight : 500

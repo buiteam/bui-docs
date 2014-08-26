@@ -1,7 +1,7 @@
 <?php $page="chart"?>
 <?php $title="柱状图"?>
 <?php $wangwang = 'dxq613' ?>
-<?php $api="../docs/api/index.html#!/api/BUI.Chart.Series.Column"?>
+<?php $api="http://acharts.github.io/acharts-api/api/index.html#!/api/Chart.Series.Column"?>
 <?php include("../templates/header.php"); ?>
 <?php include("nav.php"); ?>
 <script type="text/javascript">

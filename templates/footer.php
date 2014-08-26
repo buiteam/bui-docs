@@ -27,7 +27,6 @@
 		<div class="ds-links clearfix">
 	          	<div class="ds-links-left"></div>
 	          	<div class="ds-links-content clearfix">
-	            	<a href="http://www.js-css.cn" style="background-image:url(<?php echo $base; ?>/assets/img/js-csslogo.png) " target="_blank"></a>
 	              <a href="http://docs.kissyui.com" style="background-image:url(<?php echo $base; ?>/assets/img/kissylogo.png)" target="_blank"></a>
 	            </div>
 	  </div>
