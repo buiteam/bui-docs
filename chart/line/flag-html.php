@@ -1,4 +1,4 @@
-<?php $title="折线图"?>
+<?php $title="自定义标记"?>
 <?php include("../../templates/chart-header.php"); ?>
 <style>
     .ac-tooltip{

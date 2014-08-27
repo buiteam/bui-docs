@@ -79,7 +79,6 @@
           minHeight : 600
         },
         {
-<<<<<<< HEAD
             text : '使用flag' ,
             href : 'line/flag-base.php',
             minHeight : 600
@@ -90,10 +89,10 @@
             minHeight : 600
         },
         {
-            text : '自定义flag' ,
-            href : 'line/flag-html.php',
-            minHeight : 600
-=======
+            text: '自定义flag',
+            href: 'line/flag-html.php',
+            minHeight: 600
+        },{
           text : '自适应宽度' ,
           href : 'line/auto-width.php',
           minHeight : 600
@@ -107,7 +106,6 @@
           text : '坐标轴转换' ,
           href : 'line/invert.php',
           minHeight : 600
->>>>>>> 916b360610ae3fddc8e840ccdff1bfab47b282ca
         }
 
     ];
