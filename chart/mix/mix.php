@@ -129,7 +129,7 @@
         });
 
         //柱状图
-        var chart = new Chart({
+        var chart = new AChart({
           height : 400,
           id : 'canvas',
           store : store,
@@ -234,7 +234,7 @@
 
         form.render();
 
-        var radarChart = new Chart({
+        var radarChart = new AChart({
           height : 350,
           width : 300,
           plotCfg : {

@@ -12,7 +12,7 @@
   <script type="text/javascript">
     
   
-        var chart = new Chart({
+        var chart = new AChart({
           id : 'canvas',
           width : 950,
           height : 500,

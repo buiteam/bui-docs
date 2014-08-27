@@ -1,1 +1,1 @@
-<script src="http://g.alicdn.com/bui/acharts/1.0.4/acharts-min.js"></script>
+<script src="http://g.alicdn.com/bui/acharts/1.0.5/acharts-min.js"></script>

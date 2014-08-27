@@ -10,7 +10,7 @@
     <?php include("../../templates/chart-script.php"); ?>
 
   <script type="text/javascript">
-        var chart = new Chart({
+        var chart = new AChart({
           id : 'canvas',
           <?php print getTheme()."\n"?>
           width : 950,

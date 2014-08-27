@@ -28,10 +28,10 @@
         var charts = []
         for(var i = 0 ; i < $(".canvas").length ; i ++){
         // for(var i = 0 ; i < 2; i ++){
-          var itTheme = i ? Chart.Theme["Smooth"+i] : Chart.Theme["Base"];
+          var itTheme = i ? AChart.Theme["Smooth"+i] : Chart.Theme["Base"];
           var self = $(".canvas").eq(i);
           (function(i){
-            charts.push(new Chart({
+            charts.push(new AChart({
               render : self,
               theme : itTheme,
               seriesOptions : {

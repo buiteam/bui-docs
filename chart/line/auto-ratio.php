@@ -11,7 +11,7 @@
 
   <script type="text/javascript">
   
-        var chart = new Chart({
+        var chart = new AChart({
           id : 'canvas', //render改成 id
           <?php print getTheme()."\n"?>
           forceFit : true, //自适应宽度

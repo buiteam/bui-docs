@@ -15,6 +15,10 @@
           href : 'area/time.php',
           minHeight : 600
         },{
+          text : '异步时间区域图' ,
+          href : 'area/time-ajax.php',
+          minHeight : 600
+        },{
           text : '断点区域图' ,
           href : 'area/break.php',
           minHeight : 600
