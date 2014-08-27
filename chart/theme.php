@@ -18,7 +18,7 @@
           text : '默认皮肤' ,
           href : 'theme/default.php',
           minHeight : 600
-        }{
+        },{
           text : '扩展皮肤' ,
           href : 'theme/extend.php',
           minHeight : 600
