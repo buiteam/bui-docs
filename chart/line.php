@@ -77,6 +77,21 @@
           text : '固定tooltip' ,
           href : 'line/tooltip-fixed.php',
           minHeight : 600
+        },
+        {
+            text : '使用flag' ,
+            href : 'line/flag-base.php',
+            minHeight : 600
+        },
+        {
+            text : '修改flag样式' ,
+            href : 'line/flag-fix.php',
+            minHeight : 600
+        },
+        {
+            text : '自定义flag' ,
+            href : 'line/flag-html.php',
+            minHeight : 600
         }
 
     ];
