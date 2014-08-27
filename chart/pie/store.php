@@ -23,7 +23,7 @@
           autoLoad : true
         });
 
-        var chart = new Chart({
+        var chart = new AChart({
           id : 'canvas',
           width : 900,
           height : 500,

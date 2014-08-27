@@ -10,7 +10,7 @@
     <?php include("../../templates/chart-script.php"); ?>
 
   <script type="text/javascript">
-        var chart = new Chart({
+        var chart = new AChart({
           id : 'canvas',
           <?php print getTheme()."\n"?>
           width : 950,
@@ -27,7 +27,7 @@
           xAxis : {//格式化时间
             type : 'time' ,
             formatter : function(value)   {
-              return Chart.Date.format(new Date(value),'yyyy-mm-dd');
+              return AChart.Date.format(new Date(value),'yyyy-mm-dd');
             }
           },
           seriesOptions : { //设置多个序列共同的属性

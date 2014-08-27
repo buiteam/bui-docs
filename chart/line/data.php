@@ -24,7 +24,7 @@
             {"month":"10","tokyo":13.9,"newYork":8.6,"berlin":3.9,"london":6.6},
             {"month":"11","tokyo":9.6,"newYork":2.5,"berlin":1,"london":4.8}
           ];
-        var chart = new Chart({
+        var chart = new AChart({
           id : 'canvas',
           <?php print getTheme()."\n"?>
           width : 950,

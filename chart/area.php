@@ -1,7 +1,7 @@
 <?php $page="chart"?>
 <?php $title="区域图"?>
 <?php $wangwang = 'dxq613' ?>
-<?php $api="../docs/api/index.html#!/api/BUI.Chart.Series.Area"?>
+<?php $api="http://acharts.github.io/acharts-api/api/index.html#!/api/Chart.Series.Area"?>
 <?php include("../templates/header.php"); ?>
 <?php include("nav.php"); ?>
 <script type="text/javascript">
@@ -13,6 +13,10 @@
         },{
           text : '时间区域图' ,
           href : 'area/time.php',
+          minHeight : 600
+        },{
+          text : '异步时间区域图' ,
+          href : 'area/time-ajax.php',
           minHeight : 600
         },{
           text : '断点区域图' ,
@@ -27,6 +31,11 @@
         {
           text : '层叠百分比' ,
           href : 'area/percent.php',
+          minHeight : 600
+        },
+        {
+          text : '坐标轴翻转' ,
+          href : 'area/invert.php',
           minHeight : 600
         }
 

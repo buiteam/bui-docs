@@ -13,7 +13,7 @@
   <script type="text/javascript">
     
       //创建画板
-      var canvas = new Chart.Canvas({
+      var canvas = new AChart.Canvas({
         id : 'canvas',
         height : 800,
         width : 500

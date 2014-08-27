@@ -1,7 +1,7 @@
 <?php $page="chart"?>
 <?php $title="基本图形"?>
 <?php $wangwang = 'dxq613' ?>
-<?php $api="../docs/api/index.html#!/api/BUI.Graphic"?>
+<?php $api="http://acharts.github.io/acharts-api/api/index.html#!/api/Chart.Canvas"?>
 <?php include("../templates/header.php"); ?>
 <?php include("nav.php"); ?>
 <script type="text/javascript">

@@ -59,6 +59,16 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <h2>一般分组</h2>
+        <div id='g1' class="span10 bui-form-group">
+          <input class="input-small" data-rules="{number:true,required : true}" type="text">
+          <input class="input-small" data-rules="{number:true,required : true}" type="text">   
+          <input class="input-small" data-rules="{number:true,required : true}" type="text">
+        </div>
+        <button id="btn1" type="button" class="button">校验分组</button>
+      </div>
     </form>
     <?php include("../../templates/script.php"); ?>
     <script type="text/javascript">
@@ -80,9 +90,17 @@
       BUI.Form.Group.Select.addType('custom',{
         data : data //指定数据
       });
-      new Form.Form({
+      var form = new Form.Form({
         srcNode : '#J_Form'
       }).render();
+
+      $('#btn1').on('click',function(){
+        var g1 = form.getChild('g1');
+        g1.valid();
+        if(g1.isValid()){
+          console.log('valid');
+        }
+      });
     <?php if($useLoader) {?>  
   });  
     <?php } ?>  

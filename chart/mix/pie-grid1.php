@@ -38,7 +38,7 @@
           autoLoad : true
         });
         //饼图
-        var chart = new Chart({
+        var chart = new AChart({
           width : 400,
           height : 300,
           id : 'canvas',

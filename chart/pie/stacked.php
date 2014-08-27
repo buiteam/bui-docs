@@ -85,13 +85,13 @@
                         name: data[i].drilldown.categories[j],
                         y: data[i].drilldown.data[j],
                         attrs : {
-                          fill: Chart.Util.highlight(data[i].color,.3)
+                          fill: AChart.Util.highlight(data[i].color,.3)
                         }
                     });
                 }
             }
 
-        var chart = new Chart({
+        var chart = new AChart({
           id : 'canvas',
           width : 950,
           height : 500,

@@ -59,7 +59,7 @@
   <script src="http://g.tbcdn.cn/fi/bui/jquery-1.8.1.min.js"></script>
   <script type="text/javascript">
   
-        var chart = new Chart({
+        var chart = new AChart({
           id : 'canvas', //render改成 id
           <?php print getTheme()."\n"?>
           width : 950,
@@ -91,7 +91,7 @@
             customFollow : false, //自定义tooltip不跟随移动
             triggerEvent : 'click', //点击触发显示tip
             formatter : function (item,index) {
-              return Chart.Util.substitute('<tr><td>'+index+'</td><td>{name}</td><td style="color:{color}">{value}</td></tr>',item);
+              return AChart.Util.substitute('<tr><td>'+index+'</td><td>{name}</td><td style="color:{color}">{value}</td></tr>',item);
             },
             crosshairs : true //是否出现基准线
           },
