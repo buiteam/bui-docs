@@ -1,6 +1,5 @@
-<?php $title="更改颜色"?>
+<?php $title="默认皮肤"?>
 <?php include("../../templates/chart-header.php"); ?>
-
 
 <div class="detail-section">
     <div id="canvas">
@@ -14,8 +13,8 @@
 
     var Theme = AChart.Theme;
 
-    //重写一个theme对象 颜色不同于默认皮肤
-    Theme.color = {
+    //AChart有一个默认的皮肤 Theme.Base
+    Theme.Base = {
         "plotCfg": {
             "margin": [
                 50,
@@ -131,7 +130,18 @@
                 }
             },
             "pieCfg": {
-                "colors" : [ '#e1c673','#c49756','#8c6c42','#595348','#c86c4b','#7c4f34'],
+                "colors": [
+                    "#5e90c9",
+                    "#1c2d3f",
+                    "#a9d052",
+                    "#a12d2d",
+                    "#43bbb4",
+                    "#5a2a94",
+                    "#fabe3c",
+                    "#2279dc",
+                    "#e360e5",
+                    "#48000c"
+                ],
                 "item": {
                     "stroke": "#fff"
                 },
@@ -145,7 +155,18 @@
             "x": -999,
             "y": -999
         },
-        "colors" : [ '#e1c673','#c49756','#8c6c42','#595348','#c86c4b','#7c4f34'],
+        "colors": [
+            "#5e90c9",
+            "#1c2d3f",
+            "#a9d052",
+            "#a12d2d",
+            "#43bbb4",
+            "#5a2a94",
+            "#fabe3c",
+            "#2279dc",
+            "#e360e5",
+            "#48000c"
+        ],
         "symbols": [
             "circle",
             "diamond",
@@ -154,12 +175,10 @@
             "triangle-down"
         ]
     };
-
     var chart = new AChart({
         id : 'canvas',
         width : 950,
         height : 500,
-        theme: AChart.Theme.color,//引用了新定义的皮肤
         plotCfg : {
             margin : [50,50,80] //画板的边距
         },
