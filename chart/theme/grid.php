@@ -19,15 +19,18 @@
         xAxis : {
             grid : {
                 line : {
-                    stroke : '#a7a7a7'
+                    stroke : '#ddd'
                 }
             }
         },
         yAxis: {
             grid: {
-                minorCount: 3,//次要线个数
+                line : {
+                    stroke : '#ddd'
+                },
+                minorCount: 4,//次要线个数
                 minorLine:{
-                    stroke : '#ddd'//次要线配置
+                    stroke : '#eee'//次要线配置
                 }
             }
         }
