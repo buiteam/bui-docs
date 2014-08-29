@@ -64,6 +64,11 @@
         src : '../assets/img/line.png',
         desc:'<p>随时间动态改变的图表</p>'
       },{
+        title:'stock图表',
+        href : 'stock.php',
+        src : '../assets/img/line.png',
+        desc:'<p>大数据的图表</p>'
+      },{
         title:'其他类型的图表',
         href : 'other.php',
         src : '../assets/img/other.png',

@@ -1,1 +1,2 @@
-<script src="http://g.alicdn.com/bui/acharts/1.0.5/acharts-min.js"></script>
+<?php $chartBase = 'http://g.assets.daily.taobao.net/bui/acharts/1.0.6'; ?>
+<script src="<?php echo $chartBase; ?>/acharts.js"></script>

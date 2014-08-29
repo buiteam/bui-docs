@@ -40,6 +40,10 @@
           text : '表格自定义状态',
           href : 'grid/grid-status.php',
           minHeight: 300
+        },{
+          text : '表格多选',
+          href : 'grid/grid-mul-select.php',
+          minHeight: 300
         },
         {
           text : '表格单元格去除分割线',
