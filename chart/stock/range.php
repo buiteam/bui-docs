@@ -151,6 +151,7 @@
         tooltip : {
             valueSuffix : '￥'
         },
+        zoom: [Date.UTC(2007,0,01),Date.UTC(2008,0,01)],
         series : [{
             name: 'USD to EUR',
             line : {

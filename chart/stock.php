@@ -29,12 +29,12 @@
           text : '区域图' ,
           href : 'stock/area.php',
           minHeight : 600
-        },
+        }/*,
         {
             text : '柱状图' ,
             href : 'stock/column.php',
             minHeight : 600
-        },
+        }*/,
         {
           text : '多条折线' ,
           href : 'stock/multiple.php',
