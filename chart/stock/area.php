@@ -125,7 +125,7 @@
       ];
     var stock = new AStock({
         id : 'canvas',
-        width : 1000,
+        width : 950,
         height : 400,
         plotCfg : {
             margin : [60,50,60,50] //画板的边距
