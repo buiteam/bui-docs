@@ -127,6 +127,8 @@
         rangeSelectorOption: {
             //设置上方图形不随着控制区域的变更而直接刷新页面
             autoRefresh: false,
+            //设置拖动结束才执行回调
+            dragRefresh: false,
             zoom: [1136073600000+ 86400000 * 130,1136073600000+ 86400000 * 170],
             //设置回调函数,异步取数据并刷新上方图形
             zoomChange: function(startTime,endTime){
