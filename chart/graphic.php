@@ -31,6 +31,11 @@
           text : 'Markers' ,
           href : 'graphic/marker.php',
           minHeight : 600
+        },
+        {
+          text : '事件' ,
+          href : 'graphic/event.php',
+          minHeight : 600
         }
     ];
   </script>

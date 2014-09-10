@@ -11,7 +11,7 @@
       
       <p>平移参考： <a href="http://raphaeljs.com/reference.html#Element.transform">Raphael平移</a></p>
     </div>
-    
+    <script src="http://g.tbcdn.cn/fi/bui/jquery-1.8.1.min.js"></script> 
     <?php include("../../templates/chart-script.php"); ?>
 
   <script type="text/javascript">

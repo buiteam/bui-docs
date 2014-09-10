@@ -8,7 +8,6 @@
 </div>
 <?php include("../../templates/script.php"); ?>
 <script type="text/javascript">
-BUI.setDebug(true);
 <?php if($useKissy) {?>
   KISSY.use(['bui/select','bui/picker','bui/grid'],function(S,Select,Picker,Grid){
 <?php }else if($useLoader) {?>

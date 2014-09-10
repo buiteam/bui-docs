@@ -8,7 +8,7 @@
 <?php if($useKissy) {?>
     KISSY.use(['bui/select','bui/picker','bui/grid','bui/data'],function(S,Select,Picker,Grid,Data){
 <?php }else if($useLoader) {?>
-  BUI.use(['bui/select','bui/picker','bui/grid',],function(Select,Picker,Grid,Data){
+  BUI.use(['bui/select','bui/picker','bui/grid','bui/data'],function(Select,Picker,Grid,Data){
 <?php }else{?> 
     var Select = BUI.Select,
       Picker = BUI.Picker,
