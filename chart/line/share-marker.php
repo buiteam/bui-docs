@@ -30,11 +30,12 @@
             formatter : function(value){
               var date = new Date(value);
               if(date.getHours() == 0){ //天
-                return (date.getMonth() + 1) + '月' + date.getDay() + '日';
+                return (date.getMonth() + 1) + '月' + date.getDate() + '日';
               }else{
                 return date.getHours() + ': 00';
               }
-            }
+            }/*,
+            autoOffset : false*/
           },
           yAxis : {
             title : {
@@ -49,7 +50,7 @@
               },
               smooth : true,
               pointInterval: 3600000, // one hour
-              pointStart: new Date(2009, 9, 6, 0, 0, 0).getTime()
+              pointStart: new Date(2009, 9, 6, 0, 0, 0).getTime() // Date.UTC(2009, 9, 6)//
             }
           },
           tooltip : {

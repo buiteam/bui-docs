@@ -19,7 +19,7 @@ BUI.setDebug(true);
 	var suggest = new Select.Suggest({
 	   render:'#s1',
 	   name:'suggest',
-	   data:['1222224','234445','122','1111111']
+	   data:['你好么123','我很好234445','这里是122','哪里是1111111']
 	});
 	suggest.render();
 <?php if($useLoader) {?>  
