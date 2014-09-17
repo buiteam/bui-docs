@@ -8,11 +8,11 @@
 
     for($i = 0; $i<100; $i++){
         $data = array();
-        $data[] = $startTime + $add;
+        $data[] = $endTime - $add;
         $data[] = rand(1,200);
         $arr[] = $data;
 
-        $startTime = $startTime + $add;
+        $endTime = $endTime - $add;
     }
 
     sleep(1);
