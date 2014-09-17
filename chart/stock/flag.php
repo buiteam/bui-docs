@@ -168,6 +168,7 @@
             type: 'flag',
             name: 'flag',
             onSeries:'series1',
+            animate: false,
             data:[
                 {
                     x: Date.UTC(2007, 0, 01)

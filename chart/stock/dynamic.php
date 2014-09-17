@@ -182,6 +182,13 @@
             newData.push(item.data);
         });
 
+        //获取当前的zoom
+        var rangeSelector = stock.get('rangeSelector'),
+            currZoom = rangeSelector.get('zoom');
+
+        //重新设置zoom
+        rangeSelector.set('zoom',[currZoom[0],null]);
+
         stock.changeData(newData);
     }
 
