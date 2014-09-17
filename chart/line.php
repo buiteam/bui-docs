@@ -89,7 +89,7 @@
             minHeight : 600
         },
         {
-            text: '自定义flag',
+            text: 'flag事件',
             href: 'line/flag-html.php',
             minHeight: 600
         },{

@@ -69,20 +69,33 @@
     },
     seriesOptions: {
         flagCfg: {
-            line: {//线的配置
-                'stroke': '#cc0000',
-                'stroke-width': 1
+            flags:{
+                flag:{
+                    distance: -15,              //上下偏移的距离
+                    line: {                     //线的配置
+                        stroke: '#00cccc',
+                        'stroke-width': 1
+                    },
+                    shapeType: 'circle',        //可选circle，rect，image三种，默认rect
+                    shapeCfg: {                 //shape的配置项
+                        stroke: '#00cccc',
+                        r: 12,
+                        width: 22,
+                        height: 22
+                    },
+                    title: 'B',                 //显示的title
+                    titleCfg: {                 //title配置项
+
+                        rotate : 90,
+                        'font-size':13,
+                        'font-weight' : 'bold'
+                    },
+                    text: '这是一个flag',         //tooltip显示
+
+                }
             },
-            flag: {//圈的配置
-                'fill' : '#cc0000',
-                'stroke': '#cc0000',
-                'stroke-width': 1,
-                'r': 5
-            },
-            distance: -15,      //上下偏移的距离
-            duration : 1000,    //动画时间
-            animate: true,      //是否动画
-            custom: false       //是否自定义flag，当此项为true时，line和flag的配置失效
+            duration : 1000,                //动画时间
+            animate: true,                  //是否动画
         }
     },
     series : [{
@@ -101,7 +114,17 @@
         },{
             x : '一月'
         },{
-            x : '十一月'
+            x : '十一月',
+            flag:{                  //可以配置在data内部
+                title:''  ,
+                distance: 0,
+                shapeType: 'image',
+                shapeCfg: {
+                    width: 16,
+                    height: 20,
+                    src: 'https://i.alipayobjects.com/i/ecmng/png/201408/3Ds9p7HMph_src.png'
+                }
+            }
         },{
             x : '十二月'
         }],
@@ -111,17 +134,5 @@
     });
 
     chart.render();
-
-    //绑定点击事件
-    chart.on('flagclick',function(ev){
-        console.log('click');
-    });
-    //绑定hover事件
-    chart.on('flagmouseover',function(ev){
-        console.log('over');
-    });
-    chart.on('flagmouseout',function(ev){
-        console.log('out');
-    });
 </script>
 <?php include("../../templates/control-footer.php"); ?>

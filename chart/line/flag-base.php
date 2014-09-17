@@ -95,17 +95,5 @@
     });
 
     chart.render();
-
-    //绑定点击事件
-    chart.on('flagclick',function(ev){
-        console.log('click');
-    });
-    //绑定hover事件
-    chart.on('flagmouseover',function(ev){
-        console.log('over');
-    });
-    chart.on('flagmouseout',function(ev){
-        console.log('out');
-    });
 </script>
 <?php include("../../templates/control-footer.php"); ?>

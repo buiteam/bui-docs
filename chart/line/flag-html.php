@@ -1,4 +1,4 @@
-<?php $title="自定义标记"?>
+<?php $title="flag事件"?>
 <?php include("../../templates/chart-header.php"); ?>
 <style>
     .ac-tooltip{
@@ -68,12 +68,23 @@
         custom : true //自定义tooltip
     },
     seriesOptions: {
-        flagCfg: {
-            distance: -7,      //上下偏移的距离
-            duration : 1000,   //动画时间
-            animate: true,     //是否动画
-            custom: true,      //是否自定义flag，当此项为true时，line和flag的配置失效
-            html: '<img width="21" height="19" src="https://i.alipayobjects.com/i/ecmng/png/201408/3Ds0U7nGOD_src.png" />' //html模板，默认就是<img width="21" height="19" src="https://i.alipayobjects.com/i/ecmng/png/201408/3Ds0U7nGOD_src.png" />
+        flagCfg:{
+            flags:{
+                events: {
+                    //点击事件
+                    flagclick: function(ev){
+                        console.log('click');
+                    },
+                    //鼠标移入
+                    flagover: function(ev){
+                        console.log('over');
+                    },
+                    //鼠标移出
+                    flagout: function(ev){
+                        console.log('out');
+                    }
+                }
+            }
         }
     },
     series : [{
