@@ -20,7 +20,7 @@
   
         var store = new Data.Store({
           url : '../data/pie.php',
-          autoLoad : true
+          autoLoad : false
         });
 
         var chart = new AChart({

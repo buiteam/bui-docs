@@ -22,6 +22,7 @@
           seriesOptions : { //设置多个序列共同的属性
             pieCfg : {
               allowPointSelect : true,
+              colors:["#81abda","#bcdcbc","#feb698","#ffde8d","#e5e5e5","#fef8f8"],
               labels : {
                 distance : 40, //文本距离圆的距离
                 label : {

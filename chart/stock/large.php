@@ -141,8 +141,8 @@
                     var chart =stock.get('chart'),
                         chartSeries = chart.getSeries();
 
-                    chartSeries[0].changeData(data);
-                    chart.repaint();
+                    chartSeries[0].changeData(data,true);
+                    //chart.repaint();
 
                     //去除遮罩
                     mask.hide();
@@ -159,7 +159,7 @@
                 'stroke-width' : 1
             },
             lineActived : {
-                'stroke-width' : 1
+                'stroke-width' : 2
             },
             data: data
         }]
