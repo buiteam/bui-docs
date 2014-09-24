@@ -6,8 +6,8 @@
 
       </div>
     </div>
-
     <?php include("../../templates/chart-script.php"); ?>
+
 
   <script type="text/javascript">
         var chart = new AChart({
@@ -41,6 +41,21 @@
           series : [{
               type: 'pie',
               name: 'Browser share',
+              events : {
+                itemclick : function (ev) {
+                  var point = ev.point
+                    //item = ev.item, //点击的项
+                  console.log(point); //执行一系列操作
+                },
+                //选中事件
+                itemselected : function(ev){
+                  console.log(ev.point.xValue + ' selected');
+                },
+                //取消选中
+                itemunselected : function(ev){
+                  console.log(ev.point.xValue + ' unselected');
+                }
+              },
               data: [
                 ['Firefox',   45.0],
                 ['IE',       26.8],

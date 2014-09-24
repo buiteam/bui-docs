@@ -47,6 +47,7 @@
           series: [{
               type: 'pie',
               name: 'Browser share',
+              
               data: [
                   ['Firefox',   45.0],
                   ['test',1],

@@ -11,6 +11,14 @@
           href : 'column/base.php',
           minHeight : 600
         },{
+          text : '点击事件' ,
+          href : 'column/event.php',
+          minHeight : 600
+        },{
+          text : '时间坐标轴' ,
+          href : 'column/time.php',
+          minHeight : 600
+        },{
           text : '多个柱状图' ,
           href : 'column/columns.php',
           minHeight : 600

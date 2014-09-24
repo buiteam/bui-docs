@@ -10,6 +10,11 @@
           text : '折线图' ,
           href : 'radar/line.php',
           minHeight : 600
+        },
+        {
+          text : '自定义文本' ,
+          href : 'radar/labels.php',
+          minHeight : 600
         },{
           text : '区域图' ,
           href : 'radar/area.php',
