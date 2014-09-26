@@ -80,7 +80,7 @@
     sideMenu.setSelected(selectedItem);
 
     demoEl.on('load',function(){
-      var frameDoc = demoEl[0].contentWindow.document,
+      /*var frameDoc = demoEl[0].contentWindow.document,
         docBody = frameDoc.body||frameDoc.documentElement,
         docHeight = $(docBody).height() + 50,
         selectedItem = sideMenu.getSelected(),
@@ -103,9 +103,9 @@
       setHtml(htmlEl.html());
       if(docContent.length){
         setSrc(docContent.html());
-      }else{
+      }else{*/
         fetchSrc(selectedItem.get('href') + loadParam);
-      }
+     // }
     });
 
     var tab = new Tab.TabPanel({
@@ -114,13 +114,13 @@
       panelContainer : '#panel',
       autoRender: true,
       children:[
-        {text:'源代码',value:'1'},
+        {text:'源代码',value:'1'}/*,
         {text:'HTML',value:'2'},
-        {text:'JS',value:'3'}
+        {text:'JS',value:'3'}*/
       ]
     });
     tab.setSelected(tab.getItemAt(0));
-
+    /*
     $('#J_Edit').on('click',function(){
       var sender = $(this);
       if(sender.text() == '编辑'){
@@ -134,7 +134,7 @@
         $('#J_Txtjs').hide();
       }
     });
-
+    */
     $('#J_SelLoader').val(loaderStr);
     $('#J_SelLoader').on('change',function(){
       var loader = $('#J_SelLoader').val();
