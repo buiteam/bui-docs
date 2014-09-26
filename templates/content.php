@@ -80,6 +80,7 @@
     sideMenu.setSelected(selectedItem);
 
     demoEl.on('load',function(){
+      var selectedItem = sideMenu.getSelected();
       /*var frameDoc = demoEl[0].contentWindow.document,
         docBody = frameDoc.body||frameDoc.documentElement,
         docHeight = $(docBody).height() + 50,
