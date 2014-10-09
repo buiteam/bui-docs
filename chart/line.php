@@ -50,6 +50,11 @@
           minHeight : 600
         },
         {
+          text : '自动计算分类' ,
+          href : 'line/auto-x.php',
+          minHeight : 600
+        },
+        {
           text : '更改数据格式' ,
           href : 'line/data.php',
           minHeight : 600

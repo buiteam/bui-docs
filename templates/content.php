@@ -81,10 +81,9 @@
 
     demoEl.on('load',function(){
       var selectedItem = sideMenu.getSelected();
-      /*var frameDoc = demoEl[0].contentWindow.document,
+      var frameDoc = demoEl[0].contentWindow.document,
         docBody = frameDoc.body||frameDoc.documentElement,
         docHeight = $(docBody).height() + 50,
-        selectedItem = sideMenu.getSelected(),
         minHeight = selectedItem.get('minHeight') || 0,
         maxHeight = selectedItem.get('maxHeight'),
         finalHeight = minHeight > docHeight ? minHeight : docHeight;
@@ -93,7 +92,7 @@
         finalHeight = maxHeight;
       }
       demoEl.height(finalHeight);
-
+      /*
       var docContent = $(docBody).find('.' + CLS_DOC),
         lastScript = $(docBody).find('script').last(),
         htmlEl = $(docBody).find('.demo-content');

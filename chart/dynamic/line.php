@@ -50,7 +50,8 @@
           series : [ {
               name: 'New York',
               smooth : true,
-              pointInterval : 2000,
+             // pointInterval : 2000,
+              markers : null,
               //type : 'column',
               data: (function() {                                                 
                   // generate an array of random data                             

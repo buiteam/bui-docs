@@ -52,9 +52,7 @@
           }],
           seriesOptions : { //设置多个序列共同的属性
             lineCfg : { //不同类型的图对应不同的共用属性，lineCfg,areaCfg,columnCfg等，type + Cfg 标示
-              smooth : true,
-              pointStart : 20,
-              pointInterval : 100
+              smooth : true
             }
           },
           tooltip : {
@@ -62,6 +60,8 @@
           },
           series : [{
             name: 'Tokyo',
+            pointStart : 20,
+            pointInterval : 100,
             data: [10,412,5020,5034,5023,5078,5008,5025,4997,420,18,40]
           }, {
               name: 'London',

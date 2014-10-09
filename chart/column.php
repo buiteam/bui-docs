@@ -19,6 +19,10 @@
           href : 'column/time.php',
           minHeight : 600
         },{
+          text : '时间分类坐标轴' ,
+          href : 'column/time-category.php',
+          minHeight : 600
+        },{
           text : '多个柱状图' ,
           href : 'column/columns.php',
           minHeight : 600

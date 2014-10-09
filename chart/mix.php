@@ -28,6 +28,15 @@
           text : '饼图与表格' ,
           href : 'mix/pie-grid.php',
           minHeight : 600
+        },
+        {
+          text : '层叠图与折线图' ,
+          href : 'mix/stacked-line1.php',
+          minHeight : 600
+        },{
+          text : '层叠图与折线图(多y轴）' ,
+          href : 'mix/stacked-line.php',
+          minHeight : 600
         }/*,{
           text : '雷达图与表单' ,
           href : 'mix/radar-form.php',

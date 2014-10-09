@@ -10,8 +10,16 @@
     <?php include("../../templates/chart-script.php"); ?>
 
   <script type="text/javascript">
-    
-  
+        var now = new Date(),
+          start = new Date(now.getFullYear(),now.getMonth(),now.getDate(),0,0,0),
+          end = new Date(now.getFullYear(),now.getMonth(),now.getDate() + 1,0,0,0);
+        var interval = 5 * 1000,//10秒钟
+          ticks = []; 
+
+        for(var i = 0;i <= 24;i++ ){
+          ticks.push(new Date(now.getFullYear(),now.getMonth(),now.getDate(),i,0,0).getTime());
+        }
+
         var chart = new AChart({
           id : 'canvas',
           width : 950,
@@ -22,27 +30,42 @@
           },
           xAxis : {
             type : 'time',
+            labels : {
+              renderer : function(text){
+                var arr = text.split(':');
+                return arr[0] + '时';
+              }
+            },
             formatter : function(value){
               var date = new Date(value);
               return date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
             },
+            ticks : ticks,
             tickOffset : 10
           },
           yAxis : {
             title : {
               text : 'xxxxx'
-            },
-            min : 0
+            }
           },  
           tooltip : {
-            valueSuffix : '°C',
             shared : true,
             crosshairs : true
           },
           seriesOptions : {
             lineCfg : { 
-              pointInterval : 2000,
-              markers : null,//不显示marker,数据量大时，动画非常卡顿
+              animate : false,
+              pointStart : start.getTime(),
+              pointInterval : interval,
+              line : {
+                'stroke-width' : 0.5
+              },
+              lineActived : {
+                'stroke-width' : 0.5
+              },
+              markers : {
+                single : true
+              }//不显示marker,数据量大时，动画非常卡顿
             }
           },
           series : [ {
@@ -55,47 +78,47 @@
           }]
         });
         
+        
         function getData(){
           var data = [],                                                  
-              time = Math.floor((new Date()).getTime()/1000) * 1000,                              
-              i;                                                          
+              i,pre;                                                        
                                                                           
-          for (i = -19; i <= 0; i++) {                                    
-              data.push({                                                 
-                  x: time + i * 1000,                                     
-                  y: getRandom()                                   
-              });                                                         
+          for (i = start.getTime(); i <= now.getTime(); i = i + interval) {   
+            var value = getRandom(pre)                                 
+            data.push(value);
+            pre = value;                                                         
           }                                                               
           return data; 
         }
-        function getRandom(){
+        function getRandom(pre){
           var r = Math.random(),
-            factor = r > 0.5 ? 1 : -1;
-          return 100 + Math.random() * 30 * factor;
+            factor = r > 0.45 ? 1 : -1;
+          pre = pre || 100;
+          return pre + Math.random() * 0.5 * factor;
         }
 
         chart.render();
 
-          var series = chart.getSeries()[0],
+        var series = chart.getSeries()[0],
             series1 = chart.getSeries()[1]; 
 
                                    
           setInterval(function() {                                    
-              add(); 
+              add();  //模拟异步请求
                                   
-          }, 1000);
+          }, interval);
 
 
           function add(){
-            var x = Math.floor((new Date()).getTime()/1000) * 1000, // current time         
-                  y = getRandom();  
+            var data = series.get('data'),   
+              y = getRandom(data[data.length-1]);  
               
-            series.addPoint([x, y],false,false);  //第一个不重绘
+            series.addPoint(y,false,false);  //第一个不重绘
 
-            var x = Math.floor((new Date()).getTime()/1000) * 1000, // current time         
-                  y = getRandom(); 
-
-            series1.addPoint([x, y],false,true);  //第二个重绘
-          }
+            var data = series1.get('data'),   
+              y = getRandom(data[data.length-1]);  
+              
+            series1.addPoint(y,false,true);
+          }/**/
       </script>
 <?php include("../../templates/control-footer.php"); ?>

@@ -6,11 +6,11 @@
 <?php include("nav.php"); ?>
 <script type="text/javascript">
     var menus = [
-        {
+        /*{
           text : '折线图' ,
           href : 'dynamic/line.php',
           minHeight : 600
-        },{
+        },*/{
           text : '柱状图' ,
           href : 'dynamic/column.php',
           minHeight : 600
