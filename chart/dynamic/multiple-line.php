@@ -13,7 +13,7 @@
         var now = new Date(),
           start = new Date(now.getFullYear(),now.getMonth(),now.getDate(),0,0,0),
           end = new Date(now.getFullYear(),now.getMonth(),now.getDate() + 1,0,0,0);
-        var interval = 5 * 1000,//10秒钟
+        var interval = 60 * 1000,//1分钟
           ticks = []; 
 
         for(var i = 0;i <= 24;i++ ){
