@@ -2,7 +2,6 @@
   // 站点全局的配置文件
 
   $assets = "http://g.alicdn.com/bui/bui/1.1.3";
-  // $assets = "http://g.alicdn.daily.taobao.net/bui/bui/1.1.3";
 
   $useLoader = true;
   $loader = $_GET['loader'];
