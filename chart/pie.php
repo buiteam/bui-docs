@@ -14,6 +14,14 @@
           text : '多文本饼图' ,
           href : 'pie/text.php',
           minHeight : 600
+        },{
+          text : '使用Legend' ,
+          href : 'pie/legend.php',
+          minHeight : 600
+        },{
+          text : 'legend 样式' ,
+          href : 'pie/legend-theme.php',
+          minHeight : 600
         },
         {
           text : '内部显示文本' ,

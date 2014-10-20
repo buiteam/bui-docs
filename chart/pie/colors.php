@@ -50,10 +50,10 @@
               name: 'Browser share',
               data: [
                   ['Firefox',   45.0],
-                  ['test',1],
-                  ['test',1],
-                  ['test',1],
-                  ['test',1],
+                  ['test1',1],
+                  ['test2',1],
+                  ['test3',1],
+                  ['test4',1],
                   ['IE',       26.8],
                   {
                       name: 'Chrome',
@@ -61,15 +61,15 @@
                       sliced: true
                   },
                   ['Safari',    8.5],
-                  ['test',1],
-                  ['test',1],
-                  ['test',1],
-                  ['test',1],
+                  ['test5',1],
+                  ['test6',1],
+                  ['test7',1],
+                  ['test8',1],
                   ['Opera',     6.2],
-                  ['test',1],
-                  ['test',1],
-                  ['test',1],
-                  ['test',1],
+                  ['test9',1],
+                  ['test11',1],
+                  ['test12',1],
+                  ['test13',1],
                   ['Others',   0.7]
               ]
           }]

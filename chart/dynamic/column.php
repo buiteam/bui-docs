@@ -49,7 +49,6 @@
           },
           series : [ {
               name: 'New York',
-              pointInterval : 2000,
               type : 'column',
               data: (function() {                                                 
                   // generate an array of random data                             

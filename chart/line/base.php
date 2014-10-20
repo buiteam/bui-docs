@@ -35,6 +35,7 @@
               rotate : -90
             }
           },
+
           tooltip : {
             valueSuffix : '°C',
             shared : true, //是否多个数据序列共同显示信息
