@@ -11,6 +11,10 @@
           href : 'area/base.php',
           minHeight : 600
         },{
+          text : '曲线' ,
+          href : 'area/smooth.php',
+          minHeight : 600
+        },{
           text : '时间区域图' ,
           href : 'area/time.php',
           minHeight : 600

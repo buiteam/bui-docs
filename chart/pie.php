@@ -71,6 +71,11 @@
           minHeight : 600
         },
         {
+          text : '饼图联动' ,
+          href : 'pie/cascade.php',
+          minHeight : 600
+        },
+        {
           text : '使用store' ,
           href : 'pie/store.php',
           minHeight : 600

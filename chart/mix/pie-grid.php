@@ -42,6 +42,7 @@
           width : 400,
           height : 300,
           id : 'canvas',
+          
           plotCfg : {
             margin : [20,0,80] //画板的边距
           },

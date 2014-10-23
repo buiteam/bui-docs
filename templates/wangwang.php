@@ -43,7 +43,7 @@ if(isset($page) && $page == 'chart')
       })
 
 
-      var themeCookie = Cookie.get("theme") || 0;
+      var themeCookie = Cookie.get("theme") || '';
       $("#chartThemeChg").val(themeCookie)
       $("#chartThemeChg").change(function(){
         var value = $(this).val();

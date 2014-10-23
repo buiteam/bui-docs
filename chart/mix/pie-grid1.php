@@ -42,6 +42,7 @@
           width : 400,
           height : 300,
           id : 'canvas',
+          <?php print getTheme()."\n"?>
           plotCfg : {
             margin : [20,0,80] //画板的边距
           },

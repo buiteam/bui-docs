@@ -23,6 +23,7 @@
   
         var chart = new AChart({
           id : 'canvas',
+          <?php print getTheme()."\n"?>
           width : 950,
           height : 500,
           store : store,

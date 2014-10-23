@@ -1,17 +1,17 @@
-<?php $title="折线图"?>
+<?php $title="曲线图"?>
 <?php include("../../templates/chart-header.php"); ?>
 
-    <div class="detail-section">  
+    <div class="detail-section">
       <div id="canvas">
-        
+
       </div>
     </div>
-    
+
     <?php include("../../templates/chart-script.php"); ?>
 
   <script type="text/javascript">
     
-  
+
         var chart = new AChart({
           id : 'canvas',
           <?php print getTheme()."\n"?>
@@ -35,24 +35,36 @@
               text : '温度',
               rotate : -90
             }
-          },  
+          },
+          seriesOptions : { //设置多个序列共同的属性
+            areaCfg : { //不同类型的图对应不同的共用属性，lineCfg,areaCfg,columnCfg等，type + Cfg 标示
+              smooth : true,
+              markers : {
+                single : true,
+                marker : {
+                  fill : null,
+                  stroke : '#eff',
+                  radius : 6,
+                  'stroke-width':4
+                },
+                actived : {
+                  fill : null,
+                  stroke : '#eff',
+                  radius : 6,
+                  'stroke-width':4
+                }
+              }
+            }
+          },
           tooltip : {
-            valueSuffix : '°C'/*,
-            shared : true, //是否多个数据序列共同显示信息
-            crosshairs : true //是否出现基准线
-            */
+            valueSuffix : '°C'
           },
           series : [{
-                type : 'area',
-                markers : {
-                  single : true
-                },
                 name: 'Tokyo',
-                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                data: [20, 6.9, 15, 3, 18.2, 4, 25.2, 6, 23.3, 8, 13.9, 9.6]
             }, {
                 name: 'New York',
-
-                data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                data: [-0.2, 16, 5.7, 20, 17.0, 3, 24.8, 4.1, 20.1, 5.1, 8.6, 2.5]
             }]
         });
 

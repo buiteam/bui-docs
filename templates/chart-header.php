@@ -27,7 +27,7 @@
 
   function getTheme(){
     $rst = "";
-    $theme = "";
+    $theme = "Chart.Theme.Smooth1";
     if(isset($_COOKIE['theme'])){
       $theme = $_COOKIE['theme'];
     }

@@ -30,6 +30,11 @@
           minHeight : 600
         },
         {
+          text : '柱状图与饼图' ,
+          href : 'mix/pie-column.php',
+          minHeight : 600
+        },
+        {
           text : '层叠图与折线图' ,
           href : 'mix/stacked-line1.php',
           minHeight : 600
