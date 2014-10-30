@@ -48,6 +48,8 @@
             dx : 10,
             align : 'top',//top,left,right,bottom(默认)
             layout : 'vertical',//默认 horizontal
+            spacingX : 5,
+            spacingY : 10,//Y轴方向上的间距
             back : { //背景的配置信息，等同于shape的attrs
               fill : '#efefef'//stroke : null 清除边框
             }

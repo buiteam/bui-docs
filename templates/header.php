@@ -76,8 +76,8 @@ include($path);
           控件库 Demo
         </a>
       </li>
-      <li <?php if(isset($page) && $page == 'chart') echo 'class="current_page"'?>>
-        <a href="<?php echo $base; ?>/chart/index.php">
+      <li>
+        <a href="http://acharts.github.io/">
           图表
         </a>
       </li>

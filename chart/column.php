@@ -32,6 +32,11 @@
           minHeight : 600
         },
         {
+          text : '自定义宽度' ,
+          href : 'column/width.php',
+          minHeight : 600
+        },
+        {
           text : '层叠柱状图' ,
           href : 'column/stacked.php',
           minHeight : 600
