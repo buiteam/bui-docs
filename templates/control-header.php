@@ -7,7 +7,7 @@
 <!-- 此文件为了显示Demo样式，项目中不需要引入 -->
 <link href="../../assets/code/demo.css" rel="stylesheet">
 
-<?php if($useBs3) { ?>
+<?php if(!$nouseBs3) { ?>
   <link href="<?php echo $assets; ?>/css/bs3/dpl.css" rel="stylesheet">
   <link href="<?php echo $assets; ?>/css/bs3/bui.css" rel="stylesheet">
 <?php } else {?>
@@ -18,8 +18,8 @@
 </head>
 <body>
   <?php
-  if(!isset($_GET['source'])){
+  /*if(!isset($_GET['source'])){
     include('ga.php');
-  }
+  }*/
   ?>
 <div class="demo-content">

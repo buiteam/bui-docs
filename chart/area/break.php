@@ -24,6 +24,12 @@
           subTitle : {
             text : 'Source: WorldClimate.com'
           },
+          yAxis : {
+            
+            formatter : function  (value) {
+              return value;
+            }
+          },
           seriesOptions : { //设置多个序列共同的属性
             areaCfg : { //如果数据序列未指定类型，则默认为指定了xxCfg的类型，否则都默认是line
               markers : {

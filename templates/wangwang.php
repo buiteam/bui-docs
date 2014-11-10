@@ -1,6 +1,6 @@
 <span >
   <span class="c-title">[</span>
-  <label class="checkbox title-lnk"><input type="checkbox" class="chkBootstrap" <?php if($useBs3){echo "checked";} ?> >使用bootstrap3的样式</label>
+  <label class="checkbox title-lnk"><input type="checkbox" class="chkBootstrap" <?php if($nouseBs3){echo "checked";} ?> >使用老样式</label>
   <span class="c-title">]</span>
 </span>
 
@@ -33,11 +33,12 @@ if(isset($page) && $page == 'chart')
     BUI.use('bui/cookie', function(Cookie){
       $('.chkBootstrap').on('click', function(ev){
         if($(this).attr('checked')){
-          Cookie.set('useBs3', 'true', 30, '', '/');
+          Cookie.set('nouseBs3', 'true', 30, '', '/');
           window.location.reload();
         }
         else{
-          Cookie.remove('useBs3','','/');
+          
+          Cookie.remove('nouseBs3','','/');
           window.location.reload();
         }
       })
