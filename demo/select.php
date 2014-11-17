@@ -32,6 +32,10 @@
           href : 'select/combox-tag.php',
           minHeight : 300
         },{   
+          text : 'tag 使用 id',
+          href : 'select/tag-id.php',
+          minHeight : 300
+        },{   
           text : '提示框（from server）',
           href : 'select/suggest1.php',
           minHeight : 300
@@ -39,7 +43,11 @@
           text : '提示框（use static data）',
           href : 'select/suggest2.php',
           minHeight : 300
-        },{   
+        }/*,{   
+          text : '提示框tag',
+          href : 'select/suggest-tag.php',
+          minHeight : 300
+        }*/,{   
           text : '自定义选择器',
           href : 'picker/picker.php',
           minHeight : 300

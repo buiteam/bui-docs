@@ -15,20 +15,14 @@
       List = BUI.List;
 
 <?php }?>  
-    var list = new List.SimpleList({
-        items : [{a:'123',b:'选择文本1'},{a:'cdd',b:'选择文本2'},{a:'1333',b:'选择文本3'}],
-        itemTpl : '<li>{b}</li>',
-        idField : 'a',
-        elCls:'bui-select-list'
-      }),
-      
-      picker = new Picker.ListPicker({
-        width:300,  //指定宽度
-        children : [list] //配置picker内的列表
-      }),
       select = new Select.Select({  
         render:'#s1',
-        picker : picker,
+        list : {
+          itemTpl : '<li>{b}</li>',
+          idField : 'a',
+          elCls:'bui-select-list'
+        },
+        items : [{a:'123',b:'选择文本1'},{a:'cdd',b:'选择文本2'},{a:'1333',b:'选择文本3'}],
         valueField:'#hide'
       });
     select.render();
