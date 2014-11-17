@@ -18,7 +18,7 @@ if(isset($_COOKIE['useBs3'])){
     $useBs3 = false;
   }
 ?>
-<?php if($useBs3) { ?>
+<?php if(!$nouseBs3) { ?>
 <link href="//g.tbcdn.cn/fi/bui/css/bs3/dpl-min.css" rel="stylesheet"> 
 <link href="//g.tbcdn.cn/fi/bui/css/bs3/bui-min.css" rel="stylesheet"> 
 

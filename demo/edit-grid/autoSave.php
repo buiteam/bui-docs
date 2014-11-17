@@ -45,7 +45,7 @@
        
         </div>
         <div class="row">
-          <div class="control-group span8">
+          <div class="control-group span10">
             <label class="control-label">多选：</label>
             <div class="controls bui-form-field-select" data-select="{multipleSelect:true,items : [{text:'选项一',value:'1'},{text:'选项二',value:'2'},{text:'选项三',value:'3'}]}">
               <input type="hidden" name="e">

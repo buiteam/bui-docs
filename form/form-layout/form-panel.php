@@ -1,14 +1,14 @@
 <?php $title="表单面板"?>
 <?php include("../../templates/control-header.php"); ?>
     <div class="row">
-      <div class="span18 doc-content">
+      <div class="span20 doc-content">
           <form class="form-panel" action="post">
             <div class="panel-title">
               <span>
-                <label>报名日期：</label><input type="text" class="calendar ks-select-calendar" id="K_Calendar3"> <label>至</label> <input type="text" class="calendar ks-select-calendar" id="K_Calendar12">
+                <label>报名日期：</label><input type="text" class="calendar" > <label>至</label> <input type="text" class="calendar ">
               </span>
               <span>
-                <label>上阶段审核日期：</label><input type="text" class="calendar ks-select-calendar" id="K_Calendar20"> <label>至</label> <input type="text" class="calendar ks-select-calendar" id="K_Calendar28">
+                <label>上阶段审核日期：</label><input type="text" class="calendar"> <label>至</label> <input type="text" class="calendar">
               </span>
             </div>
             <ul class="panel-content">

@@ -12,7 +12,7 @@
   <script type="text/javascript">
         var chart = new AChart({
           id : 'canvas',
-          <?php print getTheme()."\n"?>
+           <?php print getTheme()."\n"?> //theme : Chart.Theme.Base,
           width : 950,
           height : 500,
           plotCfg : {
@@ -58,9 +58,13 @@
                 markers : {
                   marker : {
                     radius : 6,
+                    'stroke-width' : 0,
+                    stroke : undefined,
+                    fill : null,
                     symbol : 'url(http://mat1.gtimg.com/www/images/qq2012/weather/20120906/sun.png)'
                   },
                   actived : {
+                    
                     radius : 10
                   }
                 },
@@ -69,6 +73,7 @@
                 name: 'Berlin',
                 data: [-0.9, 0.6, 3.5, 8.4, 13.5, {y : 17.0,marker : { //单个对象上自定义标记
                   radius : 6,
+                  fill : 'none',
                   symbol : 'url(http://mat1.gtimg.com/www/images/qq2012/weather/20120906/sun.png)'
                 }}, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
             }]

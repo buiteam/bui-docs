@@ -29,7 +29,7 @@
       </div>
 
       <div class="row">
-        <div class="span12">
+        <div class="span14">
           <label class="control-label">起始日期：</label>
           <div class="controls">
             <input type="text" class="calendar calendar-time"><span>&nbsp;-&nbsp;</span><input type="text" class="calendar calendar-time">
