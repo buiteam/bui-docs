@@ -13,6 +13,11 @@
           minHeight : 420
         },
         {
+          text : '动态禁止编辑' ,
+          href : 'edit-grid/enable.php',
+          minHeight : 420
+        },
+        {
           text : '表格行编辑',
           href : 'edit-grid/row.php',
           minHeight : 420
