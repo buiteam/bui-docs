@@ -18,8 +18,8 @@
 </head>
 <body>
   <?php
-  /*if(!isset($_GET['source'])){
+  if(!isset($_GET['source'])){
     include('ga.php');
-  }*/
+  }
   ?>
 <div class="demo-content">
