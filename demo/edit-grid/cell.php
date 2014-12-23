@@ -31,9 +31,11 @@
             {title : '数字', dataIndex :'b',editor : {xtype : 'number',rules : {required : true}}},
             {title : '日期',dataIndex :'c', editor : {xtype : 'date'},renderer : Grid.Format.dateRenderer},
             {title : '单选',dataIndex : 'd', editor : {id:'mySelect',xtype :'select',items : enumObj,rules : {required : true},validator : valid},renderer : Grid.Format.enumRenderer(enumObj)},
-            {title : '多选',dataIndex : 'e', editor : {xtype :'select',select:{multipleSelect : true},items : enumObj},renderer : Grid.Format.multipleItemsRenderer(enumObj)}
+            {title : '多选',dataIndex : 'e', editor : {xtype :'select',select:{multipleSelect : true},items : enumObj},renderer : Grid.Format.multipleItemsRenderer(enumObj)},
+            {title : 'check',dataIndex :'f', checkable : true}
+
           ],
-          data = [{a:'123',e:'2,3'},{a:'cdd',c:1363924044176},{a:'1333',b:2222,d:2}];
+          data = [{a:'123',e:'2,3',f:false},{a:'cdd',c:1363924044176,f:true},{a:'1333',b:2222,d:2,f:false}];
         function valid(value){
           if(value === '1'){
             return '不能选择1';
@@ -67,7 +69,7 @@
                   }
                 }]
             },
-            plugins : [editing,Grid.Plugins.CheckSelection],
+            plugins : [editing,Grid.Plugins.CheckSelection,Grid.Plugins.ColumnChecked],
             store : store
           });
 
