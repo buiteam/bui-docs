@@ -27,6 +27,11 @@
           href : 'tree/icon.php',
           minHeight : 400
         },
+         {
+          text : '右键菜单',
+          href : 'tree/context-menu.php',
+          minHeight : 400
+        },
         {
           text : '自由定制节点图标',
           href : 'tree/custom-icon.php',

@@ -8,7 +8,6 @@
   </div>
     <?php include("../../templates/script.php"); ?>
     <script type="text/javascript">
-    seajs.data.map = [];
     <?php if($useKissy) {?>
     KISSY.use('bui/uploader',function (S,Uploader){
     <?php }else{?>

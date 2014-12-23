@@ -21,8 +21,8 @@ KISSY.use('bui/calendar',function(S,Calendar){
     <?php }?>
       var datepicker = new Calendar.DatePicker({
             trigger:'.calendar',
-            maxDate : '2014-01-01',
-            minDate : '2013-7-25',
+            minDate : '2015-12-01',
+            maxDate : '2015-12-25',
             autoRender : true
           });
     <?php if($useLoader || $useKissy) {?>

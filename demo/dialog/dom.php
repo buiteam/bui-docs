@@ -53,7 +53,7 @@
         Form = BUI.Form;
     <?php }?>
 
-      var form = new Form.Form({
+      var form = new Form.HForm({
         srcNode : '#form'
       }).render();
 
