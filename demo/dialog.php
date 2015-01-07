@@ -23,6 +23,10 @@
           text : '自定义按钮',
           href : 'dialog/custom.php',
           minHeight : 400
+        },{
+          text : '自定义对齐位置',
+          href : 'dialog/align.php',
+          minHeight : 400
         },
         {
           text : '设置html',
