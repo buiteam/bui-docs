@@ -76,6 +76,10 @@
           text : '表单中的选择框',
           href : 'form/form-select.php',
           minHeight : 500
+        },{
+          text : '级联下拉',
+          href : 'form/group-select.php',
+          minHeight : 500
         },
          {
           text : '表单中的列表',

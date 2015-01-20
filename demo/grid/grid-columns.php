@@ -7,8 +7,11 @@
         </div>
       </div>
     </div>
+    <p>添加索引，在指定的位置添加列</p>
     <p>
+      <label>位置</label> ：
       <input type="text" id="J_Index">
+
       <button id="J_Btn" class="button">添加</button>
     </p>
     <?php include("../../templates/script.php"); ?>

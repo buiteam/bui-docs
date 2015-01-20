@@ -51,6 +51,11 @@
           text : '自定义样式的分页栏',
           href : 'grid/grid-number-bar.php',
           minHeight : 300
+        },
+        {
+          text : '深层次属性',
+          href : 'grid/grid-data-propery.php',
+          minHeight : 300
         }
     ];
   </script>

@@ -17,6 +17,10 @@
           href : 'calendar/time.php',
           text : '时间选择',
           minHeight : 420
+        },{
+          href : 'calendar/delegate.php',
+          text : '委托显示日期',
+          minHeight : 420
         },
         {
           href : 'calendar/range.php',

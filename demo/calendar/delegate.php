@@ -16,7 +16,7 @@ KISSY.use('bui/calendar',function(S,Calendar){
     <?php }?>
       var datepicker = new Calendar.DatePicker({
             trigger:'.calendar',
-            delegateTigger : true,
+            delegateTrigger : true,
             autoRender : true
           });
 
