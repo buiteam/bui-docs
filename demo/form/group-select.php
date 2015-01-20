@@ -33,6 +33,7 @@
           <select class="input-small"><option>第四级</option></select>
         </div>
       </div>
+      <p><label class="label">注意：</label>没有下一级节点的是叶子节点</p>
 
       <h3>静态数据</h3>
       <p>直接设置静态数据源</p>

@@ -13,5 +13,5 @@
 
   <script src="http://g.tbcdn.cn/fi/bui/jquery-1.8.1.min.js"></script>
   <script src="http://g.alicdn.com/bui/seajs/2.3.0/sea.js"></script>
-  <script src="<?php echo $assets; ?>/config.js"></script>
+  <script src="<?php echo $assets; ?>/config.js" debug="true"></script>
 <?php } ?>
