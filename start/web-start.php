@@ -89,14 +89,14 @@
 				<h3>引入BUI的 seed.js</h3>
 				<p>你可以仅仅引入BUI的 seed.js，文件中包含<a href="#loader">loader</a>和<a href="#common">common</a>，此时其他模块使用<code>BUI.use</code>引入</p>
 				<pre class="well">
-&lt;script src="http://g.tbcdn.cn/fi/bui/seed-min.js"&gt;&lt;/script&gt;
+&lt;script src="<?php echo $assets; ?>/seed-min.js"&gt;&lt;/script&gt;
 				</pre>
 			</div>
 			<div class="span12">
 				<h3>引入BUI全部模块</h3>
 				<p>你也可以使用全部打包好的bui.js，所有的模块都包含在此文件中，你可以使用<code>BUI.use</code>引入文件</p>
 				<pre class="well">
-&lt;script src="http://g.tbcdn.cn/fi/bui/bui-min.js"&gt;&lt;/script&gt;
+&lt;script src="<?php echo $assets; ?>/bui-min.js"&gt;&lt;/script&gt;
 				</pre>
 			</div>
 		</div>
