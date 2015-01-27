@@ -315,7 +315,7 @@
           return new Overlay.Dialog({
             title:'选择联系人',
             //配置DOM容器的编号
-            height:460,
+            height:520,
             contentId:'J_Content',
             success:function () {
               addPersons();
