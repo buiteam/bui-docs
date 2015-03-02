@@ -15,3 +15,5 @@
   <script src="http://g.alicdn.com/bui/seajs/2.3.0/sea.js"></script>
   <script src="<?php echo $assets; ?>/config-min.js"></script>
 <?php } ?>
+
+<!-- script start --> 

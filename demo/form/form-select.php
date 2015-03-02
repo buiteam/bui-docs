@@ -46,7 +46,7 @@
 
       <div class="control-group">
           <label class="control-label">模拟单选下拉</label>
-          <div id="sel" class="controls bui-form-field-select"  data-items="{'1':'1班','2' : '2班','3' : '3班'}">
+          <div id="sel"  class="controls bui-form-field-select"  data-items="{'1':'1班','2' : '2班','3' : '3班'}">
             <input name="f" type="hidden">
 
           </div>
