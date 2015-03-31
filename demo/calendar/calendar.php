@@ -9,7 +9,8 @@
 KISSY.use('bui/calendar',function(S,Calendar){
     <?php }else if($useLoader) {?>
 BUI.use('bui/calendar',function(Calendar){
-    <?php }else{?>
+
+    <?php }else{ ?>
     var Calendar = BUI.Calendar
     <?php }?>
     var calendar = new Calendar.Calendar({

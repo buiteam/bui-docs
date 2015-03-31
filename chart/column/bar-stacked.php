@@ -15,6 +15,9 @@
           <?php print getTheme()."\n"?>
           width : 950,
           height : 400,
+           plotCfg : {
+            margin : [50,50,80,80] //画板的边距
+          },
           title : {
             text : 'Monthly Average Temperature',
             'font-size' : '16px'
@@ -25,23 +28,25 @@
           invert : true,
           xAxis : {
             categories: [
-                      'Jan',
-                      'Feb',
-                      'Mar',
-                      'Apr',
-                      'May',
-                      'Jun',
-                      'Jul',
-                      'Aug',
-                      'Sep',
-                      'Oct',
-                      'Nov',
-                      'Dec'
+                      '一月',
+                      '二月',
+                      '三月',
+                      '开票人预审',
+                      '五月',
+                      '六月',
+                      '七月',
+                      '八月',
+                      '九月',
+                      '十月',
+                      '十一月',
+                      '十二月'
             ],
             position : 'left', //x轴居左
             labels : {
               label : {
                 'text-anchor' : 'end',
+                'font-family' : '宋体',
+                'font-weight': 'bold',
                 x : -12,
                 y : 0
               }

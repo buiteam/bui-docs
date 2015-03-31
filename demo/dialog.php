@@ -79,6 +79,12 @@
           text : '内部滚动条',
           href : 'dialog/scroll.php',
           minHeight : 400
+        },
+        {
+          
+          text : '继续弹出message',
+          href : 'dialog/dialog-message.php',
+          minHeight : 400
         }
     ];
   </script>
