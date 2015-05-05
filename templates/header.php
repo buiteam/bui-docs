@@ -19,12 +19,12 @@ if(isset($_COOKIE['useBs3'])){
   }
 ?>
 <?php if(!$nouseBs3) { ?>
-<link href="http://g.alicdn.com/bui/bui/1.1.14/css/bs3/dpl-min.css" rel="stylesheet"> 
-<link href="http://g.alicdn.com/bui/bui/1.1.14/css/bs3/bui-min.css" rel="stylesheet"> 
+<link href="http://g.alicdn.com/bui/bui/1.1.17/css/bs3/dpl-min.css" rel="stylesheet"> 
+<link href="http://g.alicdn.com/bui/bui/1.1.17/css/bs3/bui-min.css" rel="stylesheet"> 
 
 <?php } else {?>
-<link href="http://g.alicdn.com/bui/bui/1.1.14/css/default/dpl.css" rel="stylesheet">
-<link href="http://g.alicdn.com/bui/bui/1.1.14/css/default/bui.css" rel="stylesheet">
+<link href="http://g.alicdn.com/bui/bui/1.1.17/css/default/dpl.css" rel="stylesheet">
+<link href="http://g.alicdn.com/bui/bui/1.1.17/css/default/bui.css" rel="stylesheet">
 <?php }?>
 
 <link href="<?php echo $base; ?>/assets/code/home.css" rel="stylesheet">
