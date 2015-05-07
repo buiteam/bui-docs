@@ -1,6 +1,6 @@
 <?php $title="分组验证规则"?>
 <?php include("../../templates/control-header.php"); ?>
-    <form id="J_Form" class="form-horizontal">
+    <form id="J_Form" class="form-horizontal" method="post">
       <h3>基本信息</h3>
       <div class="row">
         <div class="control-group span10">
@@ -61,6 +61,7 @@
         <div class="span21 offset3 control-row-auto">
           <div id="grid"></div>
         </div>
+        <input type="hidden" name="gridValue"><!--存放grid的数据-->
       </div>
       
       <div class="row">
@@ -148,8 +149,11 @@
 
     form.on('beforesubmit',function(){
       if(!editing.isValid()){
+
         return false;
       }
+      var str = BUI.JSON.stringify(store.getResult());// 提交前将grid的数据存储到隐藏域，一起提交
+      form.getField('gridValue').set('value',str); 
     });
 
     <?php if($useLoader) {?>  
