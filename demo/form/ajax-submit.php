@@ -4,7 +4,7 @@
     <button id="btnAdd" class="button">jquery 添加字段</button>
     <button id="btnAdd1" class="button">添加字段</button>
   </p>
-    <form id="J_Form" class="form-horizontal" action="data/success.json">
+    <form id="J_Form" class="form-horizontal" action="data/success.json" method="post">
         <div class="row">
           <div class="control-group span8">
             <label class="control-label">供应商编码：</label>
