@@ -25,6 +25,11 @@
           text : '使用seajs' ,
           href : 'loader/seajs.php',
           minHeight : 320
+        },
+        {   
+          text : '使用seajs 1.3' ,
+          href : 'loader/seajs.php',
+          minHeight : 320
         }
     ];
   </script>
