@@ -28,7 +28,7 @@
         },
         {   
           text : '使用seajs 1.3' ,
-          href : 'loader/seajs.php',
+          href : 'loader/seajs-1.3.php',
           minHeight : 320
         }
     ];
