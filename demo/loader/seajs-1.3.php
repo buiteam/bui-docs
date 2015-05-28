@@ -22,7 +22,7 @@
       locale: 'zh-cn'
     },
     alias : { //2.0后使用paths
-      bui : 'https://s.tbcdn.cn/g/fi/bui'
+      bui : '<?php echo $assets;?>' //'https://s.tbcdn.cn/g/fi/bui'
     },
     map : [
       [/bui\/(.*).js/,'bui/$1-min.js'] //['.js', '-min.js'] ,仅bui目录下使用-min.js,
@@ -30,7 +30,10 @@
   });
   seajs.use("jquery/jquery/1.7.2/jquery", function(jQuery){
     window.$ = window.jQuery = jQuery;
-  })
+    define('jquery',function(){
+      return jQuery;
+    });
+  });
   seajs.use('bui/calendar',function(Calendar){
     var datepicker = new Calendar.DatePicker({
         trigger:'.calendar',

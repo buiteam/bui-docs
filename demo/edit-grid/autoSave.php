@@ -91,6 +91,9 @@
           editing = new Grid.Plugins.DialogEditing({
             contentId : 'content', //设置隐藏的Dialog内容
             triggerCls : 'btn-edit', //触发显示Dialog的样式
+            editor: {
+              title: '编辑'
+            },
             autoSave : true //自动添加和更新
           }),
           store = new Store({
