@@ -43,11 +43,11 @@
           text : '提示框（use static data）',
           href : 'select/suggest2.php',
           minHeight : 300
-        }/*,{   
-          text : '提示框tag',
-          href : 'select/suggest-tag.php',
+        },{   
+          text : '映射字段',
+          href : 'select/suggest-map.php',
           minHeight : 300
-        }*/,{   
+        },{   
           text : '自定义选择器',
           href : 'picker/picker.php',
           minHeight : 300
