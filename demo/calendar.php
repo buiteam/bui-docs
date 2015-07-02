@@ -49,6 +49,14 @@
           href : 'calendar/monthpicker.php',
           text : '选择月份',
           minHeight : 420
+        },{
+          href : 'calendar/setLanguage.php',
+          text : '选择语言包',
+          minHeight : 420
+        },{
+          href : 'calendar/setResource.php',
+          text : '配置语言包',
+          minHeight : 420
         }
         
     ];
