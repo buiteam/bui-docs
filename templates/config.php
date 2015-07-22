@@ -1,7 +1,7 @@
 <?php 
   // 站点全局的配置文件
 
-  $assets = "http://g.alicdn.com/bui/bui/1.1.20";//"http://g-assets.daily.taobao.net/bui/bui/1.1.20";
+  $assets ="http://g.alicdn.com/bui/bui/1.1.21";//"http://g-assets.daily.taobao.net/bui/bui/1.1.21";// ;//"http://10.15.101.81/bui/bui/build";//;
 
   $useLoader = true;
   $loader = $_GET['loader'];
